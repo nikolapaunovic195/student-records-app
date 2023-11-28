@@ -5,7 +5,7 @@
  * @property year The year of the date.
  * @constructor Creates a date with the given day, month and year.
  */
-class Date(val day: Int, val month: Int, val year: Int) {
+class Date(private val day: Int, private val month: Int, private val year: Int) {
     init {
         // Check if the date is valid.
         require(day in 1..31) { "Invalid day: $day" }
